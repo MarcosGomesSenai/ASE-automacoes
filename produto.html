@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portão Inteligente ASE - Detalhes do Produto | ASE Automações</title>
+    <meta name="description" content="Conheça em detalhes o Portão Inteligente ASE: funcionalidades, componentes, simulação no Tinkercad, preços e comparação.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar (Mesma da index.html) -->
+    <nav class="navbar navbar-expand-lg navbar-ase fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo-ase.png" alt="Logo ASE Automações">
+                ASE Automações
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="produto.html">O Produto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tecnologia.html">Tecnologia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="seguranca-dados.html">Segurança</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre-nos.html">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link btn-ase btn-ase-primary ms-lg-2" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho da Página do Produto -->
+    <header class="page-header section-padding section-bg-light">
+        <div class="container text-center">
+            <h1>Portão Inteligente ASE</h1>
+            <p class="lead">A solução completa para automação do seu portão, unindo tecnologia, segurança e conveniência.</p>
+        </div>
+    </header>
+
+    <!-- Seção de Detalhes do Produto -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="product-image-showcase">
+                        <img src="portao-produto-detalhe.png" alt="Portão Inteligente ASE em detalhe" class="img-fluid">
+                        <!-- COLOQUE UMA IMAGEM DETALHADA DO SEU PROTÓTIPO OU UMA REPRESENTAÇÃO -->
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="mb-3">Funcionalidades Inovadoras</h2>
+                    <p>O Portão Inteligente ASE foi meticulosamente projetado para oferecer uma experiência de usuário superior, com foco nos nossos pilares: Acessibilidade, Segurança e Eficiência.</p>
+                    <ul class="feature-list-product">
+                        <li><i class="fas fa-key"></i><strong>Autenticação Segura:</strong> Acesso via teclado numérico com senha personalizável de 4 a 6 dígitos.</li>
+                        <li><i class="fas fa-radar"></i><strong>Detecção de Proximidade:</strong> Sensor ultrassônico ativa o sistema automaticamente quando um veículo se aproxima a menos de 50 cm, solicitando a senha.</li>
+                        <li><i class="fas fa-door-open"></i><strong>Abertura e Fechamento Automáticos:</strong> Após a senha correta, o portão abre e fecha automaticamente após 30 segundos, garantindo praticidade.</li>
+                        <li><i class="fas fa-desktop"></i><strong>Feedback Interativo:</strong> Display LCD exibe mensagens claras sobre o status do sistema (Ex: "Aguardando Senha", "Acesso Permitido", "Portão Fechando").</li>
+                        <li><i class="fas fa-volume-up"></i><strong>Alertas Sonoros e Visuais:</strong> Buzzer e LEDs indicam senha correta, incorreta, e status do portão, oferecendo feedback imediato.</li>
+                        <li><i class="fas fa-stop-circle"></i><strong>Botão de Parada de Emergência:</strong> Permite interromper o movimento do portão a qualquer momento (se implementado).</li>
+                        <li><i class="fas fa-universal-access"></i><strong>Compatibilidade Universal:</strong> Nosso sistema é projetado para ser adaptável a diversos tipos de portões residenciais existentes (deslizantes, basculantes, pivotantes).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Componentes e Simulação -->
+    <section class="section-padding section-bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tecnologia e Desenvolvimento</h2>
+                <p>Utilizamos componentes de qualidade e validamos nosso projeto em ambiente simulado para garantir performance e confiabilidade.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3>Componentes Utilizados (Protótipo)</h3>
+                    <p>Para o desenvolvimento do protótipo, selecionamos os seguintes componentes-chave:</p>
+                    <ul>
+                        <li><strong>Arduino Uno R3:</strong> O cérebro do sistema, controlando todas as operações. (Preço estimado: R$ 60,00)</li>
+                        <li><strong>Sensor Ultrassônico HC-SR04:</strong> Para detecção precisa de proximidade. (Preço estimado: R$ 15,00)</li>
+                        <li><strong>Teclado Matricial 4x4:</strong> Para entrada segura da senha. (Preço estimado: R$ 20,00)</li>
+                        <li><strong>Display LCD 16x2:</strong> Para feedback visual ao usuário. (Preço estimado: R$ 25,00)</li>
+                        <li><strong>Servo Motor (Simulação) / Módulo Relé:</strong> Para simular o acionamento do motor do portão (Servo: R$ 20,00 / Relé: R$ 12,00).</li>
+                        <li><strong>Buzzer e LEDs:</strong> Para alertas sonoros e visuais. (Preço estimado conjunto: R$ 10,00)</li>
+                        <li><strong>Outros (Protoboard, Jumpers, Resistores):</strong> (Preço estimado: R$ 20,00)</li>
+                    </ul>
+                    <p><strong>Custo Estimado do Protótipo (sem motor real):</strong> Aproximadamente R$ 162,00 - R$ 170,00.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Simulação e Testes no Tinkercad</h3>
+                    <p>Antes da montagem física, todo o sistema foi rigorosamente simulado e testado no ambiente virtual do Tinkercad. Isso nos permitiu:</p>
+                    <ul>
+                        <li>Validar a lógica de programação.</li>
+                        <li>Testar a interação entre os componentes.</li>
+                        <li>Identificar e corrigir falhas potenciais sem risco para o hardware.</li>
+                        <li>Otimizar o design do circuito.</li>
+                    </ul>
+                    <div class="mt-3">
+                        <img src="tinkercad-simulacao.png" alt="Simulação do projeto ASE Automações no Tinkercad" class="img-fluid rounded shadow">
+                        <!-- COLOQUE UM PRINT DA SUA SIMULAÇÃO NO TINKERCAD -->
+                        <p class="small text-muted mt-2 text-center">Visualização do nosso protótipo em simulação no Tinkercad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Comparativo de Preços -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Custo-Benefício Imbatível</h2>
+                <p>Compare e veja como o Portão Inteligente ASE oferece tecnologia avançada por um valor acessível.</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <p class="text-center mb-4">Automatizar um portão existente com sistemas tradicionais pode custar entre R$ 800 e R$ 1500, dependendo da complexidade e do tipo de portão. Portões novos já automatizados podem variar de R$ 1.600 a mais de R$ 5.000.</p>
+                    <div class="card shadow">
+                        <div class="card-body p-4">
+                            <h4 class="text-center mb-3">Portão Inteligente ASE vs. Mercado</h4>
+                            <table class="table table-bordered table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th scope="col">Característica</th>
+                                        <th scope="col" class="text-center">Portão Inteligente ASE (Kit para seu portão)</th>
+                                        <th scope="col" class="text-center">Automação Tradicional Média</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Custo Estimado da Automação</td>
+                                        <td class="text-center"><strong>R$ 202,00 - R$ 602,00 (com motor)</strong> <br><small>(Varia conforme motor e instalação)</small></td>
+                                        <td class="text-center">R$ 800,00 - R$ 1.500,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Autenticação por Senha</td>
+                                        <td class="text-center"><i class="fas fa-check-circle text-success"></i> Sim</td>
+                                        <td class="text-center"><i class="fas fa-times-circle text-danger"></i> Geralmente controle remoto</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Detecção de Proximidade</td>
+                                        <td class="text-center"><i class="fas fa-check-circle text-success"></i> Sim</td>
+                                        <td class="text-center"><i class="fas fa-times-circle text-danger"></i> Opcional (custo extra)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Feedback LCD Interativo</td>
+                                        <td class="text-center"><i class="fas fa-check-circle text-success"></i> Sim</td>
+                                        <td class="text-center"><i class="fas fa-times-circle text-danger"></i> Não</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Compatibilidade Universal</td>
+                                        <td class="text-center"><i class="fas fa-check-circle text-success"></i> Sim (para diversos tipos)</td>
+                                        <td class="text-center">Depende do kit</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="small text-muted mt-3">*Valores de mercado são estimativas e podem variar. O custo do Portão Inteligente ASE refere-se aos componentes do kit de automação e pode variar com a escolha do motor e custos de instalação.</p>
+                        </div>
+                    </div>
+                    <p class="text-center mt-4">Com o Portão Inteligente ASE, você não apenas economiza, mas também adquire um sistema com funcionalidades superiores e mais seguras. <a href="contato.html">Fale conosco</a> para saber mais!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer ATUALIZADO -->
+    <footer class="footer-ase">
+        <div class="container">
+            <div class="row">
+                <!-- Coluna 1: Logo e Descrição -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <a class="navbar-brand mb-3 d-inline-block" href="index.html">
+                        <img src="logo-ase.png" alt="Logo ASE Automações"> <!-- AJUSTE O CAMINHO DO SEU LOGO -->
+                        ASE Automações
+                    </a>
+                    <p class="small">Tecnologia e inovação para uma vida mais prática, segura e eficiente. Desenvolvendo o futuro da automação residencial.</p>
+                </div>
+
+                <!-- Coluna 2: Navegação -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5>Navegação</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produto.html">O Produto</a></li>
+                        <li><a href="tecnologia.html">Tecnologia</a></li>
+                        <li><a href="seguranca-dados.html">Segurança</a></li>
+                        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Atendimento (WhatsApp e Email) -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5>Atendimento</h5>
+                    <ul class="list-unstyled footer-contact-list">
+                        <li>
+                            <a href="https://wa.me/5511988463093" target="_blank" class="d-flex align-items-center">
+                                <i class="fab fa-whatsapp fa-fw me-2"></i>
+                                <span>(11) 98846-3093</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:marcos.r.filho@aluno.senai.br" class="d-flex align-items-center">
+                                <i class="fas fa-envelope fa-fw me-2"></i>
+                                <span>marcos.r.filho@aluno.senai.br</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Nossas Redes Sociais -->
+                <div class="col-lg-2 col-md-6"> 
+                    <h5>Nossas Redes Sociais</h5>
+                    <div class="social-icons-footer">
+                        <a href="#" title="YouTube" class="social-icon-item"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="Instagram" class="social-icon-item"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Facebook" class="social-icon-item"><i class="fab fa-facebook-f"></i></a>
+                        <!-- <a href="#" title="GitHub" class="social-icon-item"><i class="fab fa-github"></i></a> -->
+                        <a href="#" title="LinkedIn" class="social-icon-item"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- <a href="#" title="X (Twitter)" class="social-icon-item"><i class="fab fa-twitter"></i></a> Se quiser usar o ícone do X/Twitter -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center">
+                <p class="small mb-0">© <script>document.write(new Date().getFullYear())</script> ASE Automações. Todos os Direitos Reservados. Desenvolvido por [Coloque o nome do seu grupo aqui].</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

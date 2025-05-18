@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologia e Inovação | ASE Automações</title>
+    <meta name="description" content="Explore a tecnologia por trás do Portão Inteligente ASE: automação residencial, Internet das Coisas (IoT), Arduino e nosso processo de simulação.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Seu CSS Customizado -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+
+    <!-- Navbar (Mesma das outras páginas, marque 'Tecnologia' como active) -->
+    <nav class="navbar navbar-expand-lg navbar-ase fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo-ase.png" alt="Logo ASE Automações">
+                ASE Automações
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produto.html">O Produto</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="tecnologia.html">Tecnologia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="seguranca-dados.html">Segurança</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre-nos.html">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link btn-ase btn-ase-primary ms-lg-2" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho da Página de Tecnologia -->
+    <header class="page-header section-padding section-bg-light">
+        <div class="container text-center">
+            <h1>A Inteligência por Trás da Inovação</h1>
+            <p class="lead">Descubra como a automação residencial, a Internet das Coisas (IoT) e a plataforma Arduino impulsionam a eficiência e a segurança do Portão Inteligente ASE.</p>
+        </div>
+    </header>
+
+    <!-- Seção: Automação Residencial no Dia a Dia -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="automacao-residencial-diaadia.png" alt="Casa moderna com automação residencial" class="img-fluid rounded shadow">
+                    <!-- IMAGEM: Ilustração de uma casa moderna com ícones de automação (luz, portão, temperatura) -->
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <h2 class="mb-3">Automação Residencial: Conforto e Praticidade para Sua Vida</h2>
+                    <p>A automação residencial deixou de ser um luxo distante para se tornar uma realidade acessível que transforma a maneira como interagimos com nossas casas. Trata-se de integrar tecnologia aos sistemas domésticos para proporcionar maior conforto, conveniência, segurança e eficiência energética.</p>
+                    <p>No seu dia a dia, isso se traduz em:</p>
+                    <ul class="feature-list-product">
+                        <li><i class="fas fa-lightbulb"></i>Controle inteligente de iluminação e temperatura.</li>
+                        <li><i class="fas fa-shield-alt"></i>Sistemas de segurança monitorados e automatizados.</li>
+                        <li><i class="fas fa-door-open"></i>Gerenciamento facilitado de acessos, como portões e portas.</li>
+                        <li><i class="fas fa-plug"></i>Otimização do consumo de energia com dispositivos inteligentes.</li>
+                    </ul>
+                    <p>O Portão Inteligente ASE é um exemplo prático de como a automação pode simplificar tarefas rotineiras, como abrir e fechar o portão, agregando valor e inteligência ao seu lar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: O que é IoT e Como se Aplica ao Nosso Projeto -->
+    <section class="section-padding section-bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Internet das Coisas (IoT) Potencializando seu Portão</h2>
+                <p>A IoT é a espinha dorsal de muitas soluções de automação modernas, incluindo o nosso Portão Inteligente.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <h3>Desvendando a IoT</h3>
+                    <p>A Internet das Coisas (IoT) refere-se à rede de objetos físicos – "coisas" – que são equipados com sensores, software e outras tecnologias com o propósito de conectar e trocar dados com outros dispositivos e sistemas, seja pela internet ou localmente. Esses "objetos inteligentes" podem variar desde eletrodomésticos comuns até sofisticadas ferramentas industriais.</p>
+                    <p>No Portão Inteligente ASE, os princípios da IoT são aplicados da seguinte forma:</p>
+                    <ul>
+                        <li><strong>Sensores (Olhos do Sistema):</strong> O sensor ultrassônico HC-SR04 atua como um sensor IoT, coletando dados do ambiente (distância do veículo) e enviando-os para processamento.</li>
+                        <li><strong>Processamento (Cérebro do Sistema):</strong> O microcontrolador Arduino Uno R3 processa esses dados, junto com a entrada da senha do teclado, para tomar decisões inteligentes.</li>
+                        <li><strong>Atuadores (Músculos do Sistema):</strong> O servo motor (na simulação) ou o relé (no sistema físico) age como um atuador, executando a ação de abrir ou fechar o portão com base nas decisões do Arduino.</li>
+                        <li><strong>Interface com o Usuário:</strong> O display LCD e o teclado fornecem a interface para que o usuário interaja com este sistema IoT localizado.</li>
+                    </ul>
+                    <p>Embora nosso protótipo atual foque na conectividade local para maior simplicidade e segurança inicial, ele demonstra claramente como objetos do cotidiano podem se tornar "inteligentes" e interativos, melhorando a experiência do usuário e a eficiência.</p>
+                </div>
+                <div class="col-lg-5 align-self-center">
+                     <img src="iot-conceito.png" alt="Conceito de Internet das Coisas com dispositivos conectados" class="img-fluid rounded shadow">
+                     <!-- IMAGEM: Diagrama simples de IoT: sensor -> processador -> atuador / nuvem opcional -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: A Plataforma Arduino e Simulação no Tinkercad -->
+    <section class="section-padding">
+        <div class="container">
+             <div class="section-title">
+                <h2>Desenvolvimento Ágil e Confiável</h2>
+                <p>Utilizamos ferramentas robustas e acessíveis para criar uma solução eficiente e testada.</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0 text-center">
+                    <img src="arduino-uno-placa.png" alt="Placa Arduino Uno R3" class="img-fluid rounded shadow" style="max-width: 350px;">
+                    <!-- IMAGEM: Foto da placa Arduino Uno R3 -->
+                </div>
+                <div class="col-lg-7 ps-lg-5">
+                    <h3>Arduino Uno R3: O Coração do Nosso Projeto</h3>
+                    <p>O Arduino Uno R3 é uma plataforma de prototipagem eletrônica de código aberto baseada em hardware e software fáceis de usar. É ideal para iniciantes e especialistas, permitindo a criação de projetos interativos que podem sentir e controlar objetos no mundo físico.</p>
+                    <p>Escolhemos o Arduino para o Portão Inteligente ASE devido à sua:</p>
+                    <ul>
+                        <li><strong>Versatilidade:</strong> Compatível com uma vasta gama de sensores e atuadores.</li>
+                        <li><strong>Comunidade Ativa:</strong> Amplo suporte, bibliotecas e exemplos disponíveis.</li>
+                        <li><strong>Custo-Acessibilidade:</strong> Permite desenvolver soluções robustas com baixo custo.</li>
+                        <li><strong>Facilidade de Programação:</strong> Linguagem baseada em C/C++ simplificada.</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-5">
+            <div class="row align-items-center flex-row-reverse">
+                 <div class="col-lg-5 mb-4 mb-lg-0 text-center">
+                    <img src="tinkercad-simulacao-detalhe.png" alt="Simulação do Portão Inteligente ASE no Tinkercad" class="img-fluid rounded shadow">
+                    <!-- IMAGEM: Print da sua simulação do Tinkercad -->
+                </div>
+                <div class="col-lg-7 pe-lg-5">
+                    <h3>Validação no Tinkercad: Testando Antes de Construir</h3>
+                    <p>Antes de qualquer montagem física, o Portão Inteligente ASE foi extensivamente modelado e simulado utilizando o Tinkercad Circuits. Esta ferramenta online gratuita da Autodesk nos permitiu:</p>
+                    <ul>
+                        <li><strong>Prototipar Virtualmente:</strong> Desenhar o circuito eletrônico e conectar todos os componentes (Arduino, sensores, LCD, teclado, servo) em um ambiente virtual.</li>
+                        <li><strong>Desenvolver e Depurar o Código:</strong> Escrever, testar e refinar o software do Arduino diretamente na plataforma de simulação.</li>
+                        <li><strong>Identificar Problemas Antecipadamente:</strong> Detectar erros de lógica, conexões incorretas ou conflitos de componentes sem o risco de danificar hardware real.</li>
+                        <li><strong>Visualizar o Funcionamento:</strong> Observar o comportamento do sistema em tempo real, incluindo as leituras dos sensores e as ações dos atuadores.</li>
+                    </ul>
+                    <p>A simulação no Tinkercad foi uma etapa crucial para garantir a viabilidade e a robustez do nosso projeto, acelerando o desenvolvimento e otimizando o design final.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer ATUALIZADO -->
+    <footer class="footer-ase">
+        <div class="container">
+            <div class="row">
+                <!-- Coluna 1: Logo e Descrição -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <a class="navbar-brand mb-3 d-inline-block" href="index.html">
+                        <img src="logo-ase.png" alt="Logo ASE Automações"> <!-- AJUSTE O CAMINHO DO SEU LOGO -->
+                        ASE Automações
+                    </a>
+                    <p class="small">Tecnologia e inovação para uma vida mais prática, segura e eficiente. Desenvolvendo o futuro da automação residencial.</p>
+                </div>
+
+                <!-- Coluna 2: Navegação -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0"> 
+                    <h5>Navegação</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produto.html">O Produto</a></li>
+                        <li><a href="tecnologia.html">Tecnologia</a></li>
+                        <li><a href="seguranca-dados.html">Segurança</a></li>
+                        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Atendimento (WhatsApp e Email) -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h5>Atendimento</h5>
+                    <ul class="list-unstyled footer-contact-list">
+                        <li>
+                            <a href="https://wa.me/5511988463093" target="_blank" class="d-flex align-items-center">
+                                <i class="fab fa-whatsapp fa-fw me-2"></i>
+                                <span>(11) 98846-3093</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:marcos.r.filho@aluno.senai.br" class="d-flex align-items-center">
+                                <i class="fas fa-envelope fa-fw me-2"></i>
+                                <span>marcos.r.filho@aluno.senai.br</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Nossas Redes Sociais -->
+                <div class="col-lg-2 col-md-6"> 
+                    <h5>Nossas Redes Sociais</h5>
+                    <div class="social-icons-footer">
+                        <a href="#" title="YouTube" class="social-icon-item"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="Instagram" class="social-icon-item"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Facebook" class="social-icon-item"><i class="fab fa-facebook-f"></i></a>
+                        <!-- <a href="#" title="GitHub" class="social-icon-item"><i class="fab fa-github"></i></a> -->
+                        <a href="#" title="LinkedIn" class="social-icon-item"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- <a href="#" title="X (Twitter)" class="social-icon-item"><i class="fab fa-twitter"></i></a> Se quiser usar o ícone do X/Twitter -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center">
+                <p class="small mb-0">© <script>document.write(new Date().getFullYear())</script> ASE Automações. Todos os Direitos Reservados. Desenvolvido por [Coloque o nome do seu grupo aqui].</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
