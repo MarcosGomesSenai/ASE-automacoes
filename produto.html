@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portão Inteligente ASE - Detalhes do Produto | ASE Automações</title>
-    <meta name="description" content="Conheça em detalhes o Portão Inteligente ASE: funcionalidades, componentes, simulação no Tinkercad, preços e comparação.">
+    <meta name="description" content="Conheça em detalhes o Portão Inteligente ASE: funcionalidades, componentes, simulação e a evolução do projeto.">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <!-- Navbar (Mesma da index.html) -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-ase fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
@@ -43,146 +43,133 @@
         </div>
     </header>
 
-    <!-- Seção de Detalhes do Produto -->
+    <!-- Seção de Funcionalidades ATUALIZADA -->
     <section class="section-padding">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="product-image-showcase">
-                        <img src="portao-produto-detalhe.png" alt="Portão Inteligente ASE em detalhe" class="img-fluid">
-                        <!-- COLOQUE UMA IMAGEM DETALHADA DO SEU PROTÓTIPO OU UMA REPRESENTAÇÃO -->
+                        <img src="tinkercad-simulacao-joystick.png" alt="Versão final do Portão Inteligente ASE com Joystick" class="img-fluid rounded shadow-lg">
                     </div>
                 </div>
                 <div class="col-lg-6 ps-lg-5">
-                    <h2 class="mb-3">Funcionalidades Inovadoras</h2>
-                    <p>O Portão Inteligente ASE foi meticulosamente projetado para oferecer uma experiência de usuário superior, com foco nos nossos pilares: Acessibilidade, Segurança e Eficiência.</p>
+                    <h2 class="mb-3">Funcionalidades Chave da Versão Final</h2>
+                    <p>Nosso sistema foi projetado para ser robusto e fácil de usar, com recursos que garantem segurança e praticidade.</p>
                     <ul class="feature-list-product">
-                        <li><i class="fas fa-key"></i><strong>Autenticação Segura:</strong> Acesso via teclado numérico com senha personalizável de 4 a 6 dígitos.</li>
-                        <li><i class="fas fa-radar"></i><strong>Detecção de Proximidade:</strong> Sensor ultrassônico ativa o sistema automaticamente quando um veículo se aproxima a menos de 50 cm, solicitando a senha.</li>
-                        <li><i class="fas fa-door-open"></i><strong>Abertura e Fechamento Automáticos:</strong> Após a senha correta, o portão abre e fecha automaticamente após 30 segundos, garantindo praticidade.</li>
-                        <li><i class="fas fa-desktop"></i><strong>Feedback Interativo:</strong> Display LCD exibe mensagens claras sobre o status do sistema (Ex: "Aguardando Senha", "Acesso Permitido", "Portão Fechando").</li>
-                        <li><i class="fas fa-volume-up"></i><strong>Alertas Sonoros e Visuais:</strong> Buzzer e LEDs indicam senha correta, incorreta, e status do portão, oferecendo feedback imediato.</li>
-                        <li><i class="fas fa-stop-circle"></i><strong>Botão de Parada de Emergência:</strong> Permite interromper o movimento do portão a qualquer momento (se implementado).</li>
-                        <li><i class="fas fa-universal-access"></i><strong>Compatibilidade Universal:</strong> Nosso sistema é projetado para ser adaptável a diversos tipos de portões residenciais existentes (deslizantes, basculantes, pivotantes).</li>
+                        <li><i class="fas fa-gamepad"></i><strong>Controle Intuitivo por Joystick:</strong> Acesso através de uma senha sequencial de movimentos, mais rápido e seguro contra olhares.</li>
+                        <li><i class="fas fa-key"></i><strong>Alteração de Senha Segura:</strong> O próprio usuário pode alterar sua senha de forma fácil, utilizando um botão dedicado e o joystick para definir a nova sequência.</li>
+                        <li><i class="fas fa-user-lock"></i><strong>Bloqueio de Segurança:</strong> O sistema bloqueia por 10 segundos após 3 tentativas de senha incorretas, prevenindo acesso por força bruta.</li>
+                        <li><i class="far fa-clock"></i><strong>Fechamento Automático:</strong> Após a abertura, um timer de 5 segundos é iniciado e o portão se fecha sozinho, com cronômetro visível no display.</li>
+                        <li><i class="fas fa-radar"></i><strong>Ativação por Proximidade:</strong> O sensor ultrassônico detecta a aproximação do veículo e ativa o sistema, deixando-o pronto para receber a senha.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção de Componentes e Simulação -->
-    <section class="section-padding section-bg-light">
+    <!-- Seção de Evolução do Projeto com Abas ATUALIZADA -->
+    <section id="evolucao" class="section-padding section-bg-light">
         <div class="container">
             <div class="section-title">
-                <h2>Tecnologia e Desenvolvimento</h2>
-                <p>Utilizamos componentes de qualidade e validamos nosso projeto em ambiente simulado para garantir performance e confiabilidade.</p>
+                <h2>Evolução do Projeto: Da Ideia ao Produto Final</h2>
+                <p>Nossa solução nasceu de um protótipo robusto e evoluiu para um produto final inovador. Explore as duas fases do nosso desenvolvimento.</p>
             </div>
-            <div class="row">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h3>Componentes Utilizados (Protótipo)</h3>
-                    <p>Para o desenvolvimento do protótipo, selecionamos os seguintes componentes-chave:</p>
-                    <ul>
-                        <li><strong>Arduino Uno R3:</strong> O cérebro do sistema, controlando todas as operações. (Preço estimado: R$ 60,00)</li>
-                        <li><strong>Sensor Ultrassônico HC-SR04:</strong> Para detecção precisa de proximidade. (Preço estimado: R$ 15,00)</li>
-                        <li><strong>Teclado Matricial 4x4:</strong> Para entrada segura da senha. (Preço estimado: R$ 20,00)</li>
-                        <li><strong>Display LCD 16x2:</strong> Para feedback visual ao usuário. (Preço estimado: R$ 25,00)</li>
-                        <li><strong>Servo Motor (Simulação) / Módulo Relé:</strong> Para simular o acionamento do motor do portão (Servo: R$ 20,00 / Relé: R$ 12,00).</li>
-                        <li><strong>Buzzer e LEDs:</strong> Para alertas sonoros e visuais. (Preço estimado conjunto: R$ 10,00)</li>
-                        <li><strong>Outros (Protoboard, Jumpers, Resistores):</strong> (Preço estimado: R$ 20,00)</li>
-                    </ul>
-                    <p><strong>Custo Estimado do Protótipo (sem motor real):</strong> Aproximadamente R$ 162,00 - R$ 170,00.</p>
-                </div>
-                <div class="col-lg-6">
-                    <h3>Simulação e Testes no Tinkercad</h3>
-                    <p>Antes da montagem física, todo o sistema foi rigorosamente simulado e testado no ambiente virtual do Tinkercad. Isso nos permitiu:</p>
-                    <ul>
-                        <li>Validar a lógica de programação.</li>
-                        <li>Testar a interação entre os componentes.</li>
-                        <li>Identificar e corrigir falhas potenciais sem risco para o hardware.</li>
-                        <li>Otimizar o design do circuito.</li>
-                    </ul>
-                    <div class="mt-3">
-                        <img src="tinkercad-simulacao.png" alt="Simulação do projeto ASE Automações no Tinkercad" class="img-fluid rounded shadow">
-                        <!-- COLOQUE UM PRINT DA SUA SIMULAÇÃO NO TINKERCAD -->
-                        <p class="small text-muted mt-2 text-center">Visualização do nosso protótipo em simulação no Tinkercad.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Seção Comparativo de Preços -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="section-title">
-                <h2>Custo-Benefício Imbatível</h2>
-                <p>Compare e veja como o Portão Inteligente ASE oferece tecnologia avançada por um valor acessível.</p>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <p class="text-center mb-4">Automatizar um portão existente com sistemas tradicionais pode custar entre R$ 800 e R$ 1500, dependendo da complexidade e do tipo de portão. Portões novos já automatizados podem variar de R$ 1.600 a mais de R$ 5.000.</p>
-                    <div class="card shadow">
-                        <div class="card-body p-4">
-                            <h4 class="text-center mb-3">Portão Inteligente ASE vs. Mercado</h4>
-                            <table class="table table-bordered table-hover">
-                                <thead class="table-light">
-                                    <tr>
-                                        <th scope="col">Característica</th>
-                                        <th scope="col" class="text-center">Portão Inteligente ASE (Kit para seu portão)</th>
-                                        <th scope="col" class="text-center">Automação Tradicional Média</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Custo Estimado da Automação</td>
-                                        <td class="text-center"><strong>R$ 202,00 - R$ 602,00 (com motor)</strong> <br><small>(Varia conforme motor e instalação)</small></td>
-                                        <td class="text-center">R$ 800,00 - R$ 1.500,00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Autenticação por Senha</td>
-                                        <td class="text-center"><i class="fas fa-check-circle text-success"></i> Sim</td>
-                                        <td class="text-center"><i class="fas fa-times-circle text-danger"></i> Geralmente controle remoto</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Detecção de Proximidade</td>
-                                        <td class="text-center"><i class="fas fa-check-circle text-success"></i> Sim</td>
-                                        <td class="text-center"><i class="fas fa-times-circle text-danger"></i> Opcional (custo extra)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Feedback LCD Interativo</td>
-                                        <td class="text-center"><i class="fas fa-check-circle text-success"></i> Sim</td>
-                                        <td class="text-center"><i class="fas fa-times-circle text-danger"></i> Não</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Compatibilidade Universal</td>
-                                        <td class="text-center"><i class="fas fa-check-circle text-success"></i> Sim (para diversos tipos)</td>
-                                        <td class="text-center">Depende do kit</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p class="small text-muted mt-3">*Valores de mercado são estimativas e podem variar. O custo do Portão Inteligente ASE refere-se aos componentes do kit de automação e pode variar com a escolha do motor e custos de instalação.</p>
+            <ul class="nav nav-tabs nav-tabs-ase justify-content-center" id="evolutionTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="sprint1-tab" data-bs-toggle="tab" data-bs-target="#sprint1-pane" type="button" role="tab" aria-controls="sprint1-pane" aria-selected="true">
+                        <i class="fas fa-drafting-compass me-2"></i>Sprint 1: Protótipo com Teclado
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="sprint2-tab" data-bs-toggle="tab" data-bs-target="#sprint2-pane" type="button" role="tab" aria-controls="sprint2-pane" aria-selected="false">
+                        <i class="fas fa-rocket me-2"></i>Sprint 2: Versão Final com Joystick
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="evolutionTabContent">
+                <!-- Aba Sprint 1 (Protótipo) -->
+                <div class="tab-pane fade show active" id="sprint1-pane" role="tabpanel" aria-labelledby="sprint1-tab" tabindex="0">
+                    <div class="row mt-5 align-items-center">
+                        <div class="col-lg-7">
+                            <h3>A Base: Confiabilidade com Teclado 4x4</h3>
+                            <p>O ponto de partida do nosso projeto (1ª Sprint) foi a criação de um sistema seguro utilizando componentes testados. O teclado numérico oferece uma forma tradicional e eficaz de autenticação por senha.</p>
+                            <ul>
+                                <li><strong>Componentes:</strong> Arduino Uno, Teclado Matricial 4x4, Sensor Ultrassônico HC-SR04, Display LCD 16x2, Servo Motor, Buzzer e LEDs.</li>
+                                <li><strong>Funcionamento:</strong> O usuário digita uma senha numérica para obter acesso após a detecção de proximidade pelo sensor ultrassônico.</li>
+                                <li><strong>Objetivo:</strong> Validar a lógica de programação, a interação entre os componentes e a viabilidade geral do conceito de automação.</li>
+                            </ul>
+                            <p><strong>Custo Estimado do Protótipo (sem motor real):</strong> Aproximadamente R$ 162,00.</p>
+                        </div>
+                        <div class="col-lg-5 text-center">
+                            <img src="tinkercad-simulacao-teclado.png" alt="Simulação do protótipo com teclado no Tinkercad" class="img-fluid rounded shadow-lg">
                         </div>
                     </div>
-                    <p class="text-center mt-4">Com o Portão Inteligente ASE, você não apenas economiza, mas também adquire um sistema com funcionalidades superiores e mais seguras. <a href="contato.html">Fale conosco</a> para saber mais!</p>
+                </div>
+
+                <!-- Aba Sprint 2 (Versão Final) ATUALIZADA -->
+                <div class="tab-pane fade" id="sprint2-pane" role="tabpanel" aria-labelledby="sprint2-tab" tabindex="0">
+                     <div class="row mt-5 align-items-center">
+                        <div class="col-lg-7">
+                            <h3>A Evolução: Controle Intuitivo e Novas Funções</h3>
+                            <p>Na 2ª Sprint, o projeto evoluiu para uma experiência mais moderna, interativa e segura, implementando novas funcionalidades críticas.</p>
+                            <ul>
+                                <li><strong>Componentes Adicionados:</strong> Módulo Joystick Analógico e Push Button (Botão de Pulso).</li>
+                                <li><strong>Novas Funcionalidades:</strong>
+                                    <ul class="mt-2">
+                                        <li>**Senha por Joystick:** Acesso com uma sequência de movimentos.</li>
+                                        <li>**Alteração de Senha:** O usuário pode redefinir sua senha, inserindo a antiga e depois a nova sequência através do joystick.</li>
+                                        <li>**Bloqueio por Tentativas:** Após 3 erros, o sistema bloqueia por 10 segundos.</li>
+                                        <li>**Fechamento Automático:** O portão fecha após 5 segundos, com timer no LCD.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Vantagens:</strong> Acesso mais rápido, maior segurança contra olhares curiosos ("shoulder surfing") e mais controle para o usuário.</li>
+                            </ul>
+                             <p><strong>Custo Total do Projeto Final:</strong> Aproximadamente R$ 174,00.</p>
+                            <button class="btn-ase btn-ase-primary mt-3" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                Veja a Versão Final em Ação <i class="fas fa-play-circle ms-2"></i>
+                            </button>
+                        </div>
+                        <div class="col-lg-5 text-center">
+                            <img src="tinkercad-simulacao-joystick.png" alt="Simulação da versão final com joystick no Tinkercad" class="img-fluid rounded shadow-lg">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-        <!-- Footer ATUALIZADO -->
+    <!-- Modal do Vídeo com o LINK CORRETO -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Demonstração do Portão Inteligente ASE (2ª Sprint)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <!-- ID DO VÍDEO INSERIDO -->
+                        <iframe id="youtube-video" src="https://www.youtube.com/embed/jJ7gztKkC-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
     <footer class="footer-ase">
         <div class="container">
             <div class="row">
-                <!-- Coluna 1: Logo e Descrição -->
                 <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                     <a class="navbar-brand mb-3 d-inline-block" href="index.html">
-                        <img src="logo-ase.png" alt="Logo ASE Automações"> <!-- AJUSTE O CAMINHO DO SEU LOGO -->
+                        <img src="logo-ase.png" alt="Logo ASE Automações">
                         ASE Automações
                     </a>
                     <p class="small">Tecnologia e inovação para uma vida mais prática, segura e eficiente. Desenvolvendo o futuro da automação residencial.</p>
                 </div>
-
-                <!-- Coluna 2: Navegação -->
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                     <h5>Navegação</h5>
                     <ul class="list-unstyled">
@@ -194,46 +181,28 @@
                         <li><a href="contato.html">Contato</a></li>
                     </ul>
                 </div>
-
-                <!-- Coluna 3: Atendimento (WhatsApp e Email) -->
                 <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                     <h5>Atendimento</h5>
                     <ul class="list-unstyled footer-contact-list">
-                        <li>
-                            <a href="https://wa.me/5511988463093" target="_blank" class="d-flex align-items-center">
-                                <i class="fab fa-whatsapp fa-fw me-2"></i>
-                                <span>(11) 98846-3093</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:marcos.r.filho@aluno.senai.br" class="d-flex align-items-center">
-                                <i class="fas fa-envelope fa-fw me-2"></i>
-                                <span>marcos.r.filho@aluno.senai.br</span>
-                            </a>
-                        </li>
+                        <li><a href="https://wa.me/5511988463093" target="_blank"><i class="fab fa-whatsapp fa-fw me-2"></i>(11) 98846-3093</a></li>
+                        <li><a href="mailto:marcos.r.filho@aluno.senai.br"><i class="fas fa-envelope fa-fw me-2"></i>marcos.r.filho@aluno.senai.br</a></li>
                     </ul>
                 </div>
-
-                <!-- Coluna 4: Nossas Redes Sociais -->
-                <div class="col-lg-2 col-md-6"> 
-                    <h5>Nossas Redes Sociais</h5>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Nossas Redes</h5>
                     <div class="social-icons-footer">
-                        <a href="#" title="YouTube" class="social-icon-item"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/watch?v=jJ7gztKkC-w" target="_blank" title="YouTube" class="social-icon-item"><i class="fab fa-youtube"></i></a>
                         <a href="#" title="Instagram" class="social-icon-item"><i class="fab fa-instagram"></i></a>
-                        <a href="#" title="Facebook" class="social-icon-item"><i class="fab fa-facebook-f"></i></a>
-                        <!-- <a href="#" title="GitHub" class="social-icon-item"><i class="fab fa-github"></i></a> -->
-                        <a href="#" title="LinkedIn" class="social-icon-item"><i class="fab fa-linkedin-in"></i></a>
-                        <!-- <a href="#" title="X (Twitter)" class="social-icon-item"><i class="fab fa-twitter"></i></a> Se quiser usar o ícone do X/Twitter -->
                     </div>
                 </div>
             </div>
-
             <div class="footer-bottom text-center">
-                <p class="small mb-0">© <script>document.write(new Date().getFullYear())</script> ASE Automações. Todos os Direitos Reservados. Desenvolvido por um grupo de alunos do Senai 😎.</p>
+                <p class="small mb-0">© <script>document.write(new Date().getFullYear())</script> ASE Automações. Todos os Direitos Reservados. Desenvolvido por Kauâ, Gustavo, João, Sofia e Marcos.</p>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
